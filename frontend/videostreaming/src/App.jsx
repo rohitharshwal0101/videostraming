@@ -38,18 +38,9 @@ function App() {
         <h1>Video player</h1>
       </div>
       <VideoPlayer
-  options={{
-    autoplay: true,
-    controls: true,
-    sources: [
-      { src: "/path/to/video.mp4" },
-      { src: "/path/to/video.m3u8" },
-    ],
-  }}
-  onReady={(player) => {
-    console.log("Player ready", player);
-  }}
-/>
+      options={videoPlayerOptions}
+      onReady={handlePlayerReady}
+      />
     </>
   )
 }
