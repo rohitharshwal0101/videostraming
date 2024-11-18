@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
+import mime from "mime"
 
 export const VideoPlayer = (props) => {
   const videoRef = useRef(null);
